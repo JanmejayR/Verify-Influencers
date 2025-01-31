@@ -21,7 +21,7 @@ const Page = () => {
     const fetchLeaderboard = async () => {
       try {
         console.log(" inside useeffect of leaderboard");
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/leaderboard`);
+        const response = await fetch(`https://verify-influencers-pink.vercel.app/api/leaderboard`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch leaderboard data");

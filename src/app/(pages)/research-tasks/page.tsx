@@ -72,7 +72,7 @@ const Page = () => {
     try {
       setIsLoading(true)
       console.log(" form data in frontend " , formData)
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/research`, {
+      const response = await fetch(`https://verify-influencers-pink.vercel.app/api/research`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
