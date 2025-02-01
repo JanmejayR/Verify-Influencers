@@ -372,7 +372,7 @@ export const InfluencerTable: React.FC<DataTableProps> = ({ influencers }) => {
                       <Check className="h-8 w-8 " color="teal" />
                       </Flex>
                       <Text weight="bold" className="text-4xl text-teal-500 py-2">
-                      {selectedInfluencer.verifiedClaims || 0}
+                      {selectedInfluencer.claims?.length || 0}
                       </Text>
                       <Text className="py-2 text-md">From scientific journals</Text>
                     </Flex>
